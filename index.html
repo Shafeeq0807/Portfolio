@@ -1,79 +1,169 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Shafeeq</title>
-</head>
-<body>
-    <table cellspacing="20px">
-        <tr>
-            <td><img src="images/pegion.png" alt="Shafeeq"></td>
-            <td><h1>Moahmmed Shafeeq</h1>
-                <p><em>I am a student at <strong><a href="https://www.kpriet.ac.in/">KPRIET</a></strong>.</em></p>
-                <p>I am a FullStack Developer. I love watching football and cricket.</p></td>
-        </tr>
-    </table>
-    
-    
-    <hr><br>
-    <h3>Education</h3>
-    <ul>
-<li>Studied at Stanes Anglo Indian Higher Secondary School</li>
-<li>Studied at Suguna RIP V School</li>
-<li>Currently pursuing my Bachelor's at KPRIET</li>
-    </ul>
-    <hr><br>
-    <h3>Achivements</h3>
-    <table cellspacing="10">
-        <thead>
-        <tr>
-            <td>Year</td>
-            <td>Discription</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>2019</td>
-            <td>tenth class</td>
-        </tr>
-        <tr>
-            <td>2021</td>
-            <td>+2 class</td>
-        </tr>
-        <tr>
-            <td>2021-2025</td>
-            <td>Bachelor at KPRIET</td>
-        </tr>
-        </tbody>
-    </table>
-    <hr><br>
-    <h3>Skills</h3>
-    <table cellspacing="10px">
-        <tr>
-            <td><table>
-                <tr>
-                    <td>web dvelopment</td>
-                    <td>⭐⭐</td>
-                </tr>
-                <tr>
-                    <td>cloud computing</td>
-                    <td>⭐⭐⭐⭐</td>
-                </tr>
-                </table></td>
-            <td><table>
-                <tr>
-                    <td>app dvelopment</td>
-                    <td>⭐</td>
-                </tr>
-                <tr>
-                    <td>photography</td>
-                    <td>⭐⭐⭐</td>
-                </tr>
-                </table></td>
-        </tr>
-
-    </table>
-    <hr><br>
-    <a href="hobbies.html">Hobbies</a><br>
-    <a href="details.html">Contact</a>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Mohammed Shafeeq · Developer portfolio" />
+    <meta name="color-scheme" content="light" />
+    <title>Mohammed Shafeeq · Developer portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <nav class="wrap">
+        <a class="brand" href="index.html">Portfolio<span> /</span></a>
+        <div class="links">
+          <a href="https://github.com/Shafeeq0807/Portfolio">View source ↗</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap hero-layout">
+        <div>
+          <span class="eyebrow">Full-stack developer</span>
+          <h1>Useful ideas.<br />Carefully built.</h1>
+          <p class="lead">
+            I’m Mohammed Shafeeq. I build web experiences and backend applications with a focus on
+            clarity, reliability, and practical problems.
+          </p>
+          <div class="actions">
+            <a class="button" href="#projects">Explore my work ↓</a
+            ><a class="button secondary" href="details.html">Get in touch</a>
+          </div>
+        </div>
+        <aside class="hero-art" aria-label="Development interests">
+          <span class="eyebrow">My development toolkit</span>
+          <pre>
+const focus = {
+  frontend: 'React & accessible HTML',
+  backend: 'Java & Spring',
+  scripting: 'Python',
+  approach: 'Build. Test. Improve.'
+};</pre>
+          <span class="badge">Always learning, always building</span>
+        </aside>
+      </section>
+      <section id="projects" class="section wrap">
+        <div class="section-title">
+          <h2>Selected work</h2>
+          <span class="muted">07 projects / one curious mind</span>
+        </div>
+        <div class="grid">
+          <article class="card project">
+            <span class="project-number">PROJECT / 01</span>
+            <h3>Expense Tracker</h3>
+            <p>
+              A personal spending dashboard with persistent records, category insights, and CSV
+              exports.
+            </p>
+            <p class="tag">React · Vite</p>
+            <a href="https://github.com/Shafeeq0807/Expense-Tracker-react">Explore project ↗</a>
+          </article>
+          <article class="card project">
+            <span class="project-number">PROJECT / 02</span>
+            <h3>Bank Challan</h3>
+            <p>
+              An accessible challan generator with input validation and a clean printable document.
+            </p>
+            <p class="tag">HTML · JavaScript</p>
+            <a href="https://github.com/Shafeeq0807/Bank-Challan.github.io">Explore project ↗</a>
+          </article>
+          <article class="card project">
+            <span class="project-number">PROJECT / 03</span>
+            <h3>Spring Security</h3>
+            <p>Registration and authentication with password hashing and role-based access.</p>
+            <p class="tag">Java · Spring</p>
+            <a href="https://github.com/Shafeeq0807/Spring-Security-login-form"
+              >Explore project ↗</a
+            >
+          </article>
+          <article class="card project">
+            <span class="project-number">PROJECT / 04</span>
+            <h3>Coffee Machine</h3>
+            <p>
+              A testable command-line simulation with accurate payments and inventory management.
+            </p>
+            <p class="tag">Python</p>
+            <a href="https://github.com/Shafeeq0807/Coffee-Machine">Explore project ↗</a>
+          </article>
+          <article class="card project">
+            <span class="project-number">PROJECT / 05</span>
+            <h3>Registration & Login</h3>
+            <p>A complete account flow built around server-side validation and secure sessions.</p>
+            <p class="tag">Java · Spring</p>
+            <a href="https://github.com/Shafeeq0807/registration-login-page">Explore project ↗</a>
+          </article>
+          <article class="card project">
+            <span class="project-number">PROJECT / 06</span>
+            <h3>JSP Registration</h3>
+            <p>
+              A servlet-based registration app with prepared database queries and secure password
+              storage.
+            </p>
+            <p class="tag">Java · JSP · MySQL</p>
+            <a href="https://github.com/Shafeeq0807/registration_form-JSP">Explore project ↗</a>
+          </article>
+          <article class="card project">
+            <span class="project-number">PROJECT / 07</span>
+            <h3>Account API</h3>
+            <p>A session-based registration API with integration tests and documented endpoints.</p>
+            <p class="tag">Java · REST</p>
+            <a href="https://github.com/Shafeeq0807/Registrationand-login">Explore project ↗</a>
+          </article>
+        </div>
+      </section>
+      <section class="section wrap split">
+        <div>
+          <span class="eyebrow">Background</span>
+          <h2>A foundation in learning.</h2>
+          <p class="lead">
+            My education has shaped my interest in web development, cloud computing, and solving
+            problems through software.
+          </p>
+          <div class="timeline">
+            <div>
+              <small>2021–2025</small>
+              <h3>KPRIET</h3>
+              <p>Bachelor’s studies</p>
+            </div>
+            <div>
+              <small>School education</small>
+              <h3>Stanes Anglo Indian Higher Secondary School</h3>
+              <p>Suguna RIP V School</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="eyebrow">What I work with</span>
+          <h2>From interface<br />to implementation.</h2>
+          <div class="skill-list">
+            <span class="badge">HTML & CSS</span><span class="badge">JavaScript</span
+            ><span class="badge">React</span><span class="badge">Java</span
+            ><span class="badge">Spring Security</span><span class="badge">Python</span
+            ><span class="badge">MySQL</span><span class="badge">Git</span>
+          </div>
+          <p class="muted">
+            Outside code, you’ll find me following football and cricket, enjoying basketball, or
+            spending time with pets.
+          </p>
+          <a href="hobbies.html">A little more about me ↗</a>
+        </div>
+      </section>
+      <section class="section wrap">
+        <div class="card contact-banner">
+          <span class="eyebrow" style="color: #b4d5a4">Let’s connect</span>
+          <h2>Have something in mind?</h2>
+          <p>I’d love to hear about your project or exchange ideas.</p>
+          <a class="button" href="details.html">Start a conversation ↗</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <span>Built by Shafeeq · Thoughtful software, useful outcomes.</span
+        ><a href="https://github.com/Shafeeq0807">GitHub ↗</a>
+      </div>
+    </footer>
+  </body>
 </html>
