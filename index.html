@@ -11,16 +11,16 @@
 <style>
 /* Layout: left-aligned editorial index. Giant name, a ruled project index that fills on hover, a language bar drawn from the real repositories. */
 :root{
-  --bg:#edf0f4; --surface:#f9fafc; --fg:#0e1726; --muted:#55627a; --line:#cdd4df;
-  --accent:#2b4bff; --accent-ink:#ffffff;
+  --bg:#e9f5f3; --surface:#f6fcfb; --fg:#0a1f1d; --muted:#456562; --line:#c2dcd8;
+  --accent:#0a7f72; --accent-ink:#ffffff;
   --display:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;
   --body:'Instrument Sans',system-ui,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
 }
 @media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#0b111c;--surface:#121a29;--fg:#e6ebf5;--muted:#8a97b0;--line:#243046;--accent:#7d93ff;--accent-ink:#0b111c;color-scheme:dark}
+  :root:not([data-theme="light"]){--bg:#071a1b;--surface:#0d2325;--fg:#e2f5f2;--muted:#84aaa5;--line:#1b3b3d;--accent:#2fe0c4;--accent-ink:#04201c;color-scheme:dark}
 }
-:root[data-theme="dark"]{--bg:#0b111c;--surface:#121a29;--fg:#e6ebf5;--muted:#8a97b0;--line:#243046;--accent:#7d93ff;--accent-ink:#0b111c;color-scheme:dark}
+:root[data-theme="dark"]{--bg:#071a1b;--surface:#0d2325;--fg:#e2f5f2;--muted:#84aaa5;--line:#1b3b3d;--accent:#2fe0c4;--accent-ink:#04201c;color-scheme:dark}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
