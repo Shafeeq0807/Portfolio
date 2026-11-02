@@ -1,6 +1,23 @@
-# Portfolio
+# Mohammed Shafeeq H — Portfolio
 
-A responsive, accessible developer portfolio that showcases the real projects in this GitHub account. No framework or build step is required.
+Personal portfolio of Mohammed Shafeeq H, a Java full-stack developer based in Dubai. It covers selected projects, internship experience, education, certifications and technical skills.
+
+**Live site:** https://shafeeq0807.github.io/Portfolio/
+
+![Portfolio preview](docs/preview.png)
+
+## Highlights
+
+- Single static page: no framework, no build step, no dependencies beyond Google Fonts.
+- Light and dark themes that follow the system setting, with a manual toggle.
+- Responsive from phone to desktop, keyboard-friendly focus states, and reduced-motion support.
+
+## Sections
+
+- **Selected work:** Smart Resume Planner, Registration & Login System, Personal Expense Tracker and more, each linked to its code or live app.
+- **Experience:** Java Software Development Intern at MAYVEL Technologies; Full-Stack Developer Intern at Xylonics.
+- **About:** B.E. Computer Science and Engineering, KPR Institute of Engineering and Technology (2021 – 2025), and certifications.
+- **Stack:** Java, Spring Boot, Spring Security, React, TypeScript, MySQL, MongoDB, Git, AWS and more.
 
 ## Run locally
 
@@ -10,20 +27,10 @@ python -m http.server 8000
 
 Open http://localhost:8000.
 
-## Content
+## Edit the content
 
-Edit `index.html` for projects and background, `details.html` for contact links, and `styles.css` for styling. Education dates are retained from the original portfolio; update them when you confirm your current status. No career claims or credentials have been invented. The email link uses your existing published address.
+Everything lives in `index.html`: styles in the `<style>` block, content in the markup. Run `python check_links.py` to verify local links and anchors; GitHub Actions runs the same check on every push.
 
-## Accessibility
+## Contact
 
-Semantic landmarks, a skip link, visible keyboard focus, responsive grids, and reduced-motion support. All dependencies are local.
-
-## Development
-
-Changes are checked by GitHub Actions. Keep credentials in environment variables and never commit `.env`, local databases, or build output.
-
-## Preview
-
-![Application preview](docs/preview.png)
-
-Local screenshot; transaction and registration fields use sample data.
+shafeeqstanes@gmail.com · [GitHub](https://github.com/Shafeeq0807)
