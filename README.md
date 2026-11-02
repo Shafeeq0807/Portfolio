@@ -2,7 +2,7 @@
 
 Personal portfolio of Mohammed Shafeeq H, a Java full-stack developer based in Dubai. It covers selected projects, internship experience, education, certifications and technical skills.
 
-**Live site:** https://shafeeq0807.github.io/Portfolio/
+**Live site:** https://shafeeq0807.github.io/
 
 ![Portfolio preview](docs/preview.png)
 
