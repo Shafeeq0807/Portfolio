@@ -28,8 +28,14 @@ a{color:inherit}
 .top nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
 .top nav a{font:400 .85rem var(--mono);text-decoration:none;color:var(--muted)}
 .top nav a:hover{color:var(--accent2)}
-#theme{font:500 .8rem var(--mono);background:none;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:5px 10px;cursor:pointer}
-#theme:hover{border-color:var(--accent);color:var(--accent)}
+#theme{display:inline-flex;align-items:center;gap:10px;background:none;border:0;padding:0;cursor:pointer;color:var(--muted);font:500 .8rem var(--mono)}
+#theme .tk{position:relative;width:52px;height:28px;border-radius:999px;background:var(--line);border:1px solid var(--muted);transition:background .25s,border-color .25s}
+#theme .th{position:absolute;top:2px;left:2px;width:22px;height:22px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-size:.8rem;line-height:1;color:var(--accent-ink);transition:transform .25s}
+#theme .th:before{content:"☀"}
+#theme[aria-checked="true"] .th{transform:translateX(24px)}
+#theme[aria-checked="true"] .th:before{content:"☾"}
+#theme[aria-checked="true"] .tk{border-color:var(--accent2)}
+#theme:hover .tk{border-color:var(--accent)}
 .hero{padding:72px 0 64px;display:grid;grid-template-columns:1fr;gap:28px}
 .hero h1{font:700 clamp(4rem,17vw,12.5rem)/.86 var(--display);letter-spacing:-.045em;margin-left:-.04em;text-wrap:balance}
 .hero h1 span{color:var(--accent)}
@@ -92,7 +98,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;font:400 .8rem var(--mono
   <span class="id">MOHAMMED SHAFEEQ H</span>
   <nav>
     <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
-    <button id="theme" type="button" aria-label="Switch between light and dark theme">Light / Dark</button>
+    <button id="theme" type="button" role="switch" aria-checked="false" aria-label="Dark mode"><span class="lbl" id="themeLbl">Light</span><span class="tk"><span class="th"></span></span></button>
   </nav>
 </header>
 
@@ -176,12 +182,18 @@ footer{border-top:1px solid var(--line);padding:24px 0;font:400 .8rem var(--mono
 
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
-var root=document.documentElement,btn=document.getElementById('theme');
+var root=document.documentElement,btn=document.getElementById('theme'),lbl=document.getElementById('themeLbl');
+function paint(){
+  var dark=root.dataset.theme==='dark';
+  btn.setAttribute('aria-checked',dark?'true':'false');
+  lbl.textContent=dark?'Dark':'Light';
+}
 try{var t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
+paint();
 btn.addEventListener('click',function(){
-  var dark=root.dataset.theme?root.dataset.theme==='dark':false;
-  root.dataset.theme=dark?'light':'dark';
+  root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';
   try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
+  paint();
 });
 </script>
 </body>
