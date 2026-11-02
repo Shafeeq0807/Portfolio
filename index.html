@@ -11,14 +11,11 @@
 <style>
 /* Layout: left-aligned editorial index. Giant name, a ruled project index that fills on hover, a language bar drawn from the real repositories. */
 :root{
-  --bg:#f3e6d0; --surface:#faf1e0; --fg:#2b1d12; --muted:#6a5642; --line:#dcc7a5;
-  --accent:#b04a1a; --accent-ink:#fff8ee;
+  --bg:#fffaf0; --surface:#ffffff; --fg:#2a2118; --muted:#6b5a48; --line:#f0dfc0;
+  --accent:#d4500f; --accent-ink:#ffffff;
   --display:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;
   --body:'Instrument Sans',system-ui,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#1d1410;--surface:#2a1d15;--fg:#f4e4cb;--muted:#b39a7c;--line:#43301f;--accent:#e8913f;--accent-ink:#1d1410;color-scheme:dark}
 }
 :root[data-theme="dark"]{--bg:#1d1410;--surface:#2a1d15;--fg:#f4e4cb;--muted:#b39a7c;--line:#43301f;--accent:#e8913f;--accent-ink:#1d1410;color-scheme:dark}
 *{box-sizing:border-box;margin:0}
@@ -182,7 +179,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 var root=document.documentElement,btn=document.getElementById('theme');
 try{var t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
 btn.addEventListener('click',function(){
-  var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  var dark=root.dataset.theme?root.dataset.theme==='dark':false;
   root.dataset.theme=dark?'light':'dark';
   try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
 });
