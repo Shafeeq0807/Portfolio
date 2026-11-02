@@ -98,7 +98,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;font:400 .8rem var(--mono
   <span class="id">MOHAMMED SHAFEEQ H</span>
   <nav>
     <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
-    <button id="theme" type="button" role="switch" aria-checked="false" aria-label="Dark mode"><span class="lbl" id="themeLbl">Light</span><span class="tk"><span class="th"></span></span></button>
+    <button id="theme" type="button" role="switch" aria-checked="false" aria-label="Dark mode"><span class="tk"><span class="th"></span></span></button>
   </nav>
 </header>
 
@@ -182,11 +182,10 @@ footer{border-top:1px solid var(--line);padding:24px 0;font:400 .8rem var(--mono
 
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
-var root=document.documentElement,btn=document.getElementById('theme'),lbl=document.getElementById('themeLbl');
+var root=document.documentElement,btn=document.getElementById('theme');
 function paint(){
   var dark=root.dataset.theme==='dark';
   btn.setAttribute('aria-checked',dark?'true':'false');
-  lbl.textContent=dark?'Dark':'Light';
 }
 try{var t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
 paint();
