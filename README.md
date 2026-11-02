@@ -9,7 +9,7 @@ Personal portfolio of Mohammed Shafeeq H, a Java full-stack developer based in D
 ## Highlights
 
 - Single static page: no framework, no build step, no dependencies beyond Google Fonts.
-- Light and dark themes that follow the system setting, with a manual toggle.
+- Bright light theme by default, with a sliding switch in the nav bar for the aqua dark theme (the choice is remembered).
 - Responsive from phone to desktop, keyboard-friendly focus states, and reduced-motion support.
 
 ## Sections
