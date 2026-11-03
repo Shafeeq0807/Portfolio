@@ -1,6 +1,6 @@
 # Mohammed Shafeeq H — Portfolio
 
-Personal portfolio of Mohammed Shafeeq H, a Java full-stack developer based in Dubai. It covers selected projects, internship experience, education, certifications and technical skills.
+Personal portfolio of Mohammed Shafeeq H, a Java full-stack developer based in Coimbatore, India. It covers selected projects, internship experience, education, certifications and technical skills.
 
 **Live site:** https://shafeeq0807.github.io/
 
@@ -33,4 +33,4 @@ Everything lives in `index.html`: styles in the `<style>` block, content in the 
 
 ## Contact
 
-shafeeqstanes@gmail.com · [GitHub](https://github.com/Shafeeq0807)
+shafeeqstanes@gmail.com · [LinkedIn](https://www.linkedin.com/in/mohammad-shafeeq-63559a227/) · [GitHub](https://github.com/Shafeeq0807)
